@@ -12,7 +12,7 @@ class AuthRoute{
 
   Router get router => Router()
     ..post('/auth/login', _authHandler.login)
-    ..get('/auth/registration', _authHandler.register);
+    ..post('/auth/registration', _authHandler.register);
 }
 
 
