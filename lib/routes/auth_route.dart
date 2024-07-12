@@ -8,11 +8,11 @@ class AuthRoute{
   final Connection connection;
   AuthRoute(this.connection);
 
-  AuthHandler get _handler => AuthHandler(connection);
+  AuthHandler get _authHandler => AuthHandler(connection);
 
   Router get router => Router()
-    ..post('/auth/login', _handler.login)
-    ..get('/auth/registration', _handler.register);
+    ..post('/auth/login', _authHandler.login)
+    ..get('/auth/registration', _authHandler.register);
 }
 
 
