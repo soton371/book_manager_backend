@@ -11,20 +11,7 @@ class AuthRoute{
   AuthHandler get _authHandler => AuthHandler(connection);
 
   Router get router => Router()
-    ..post('/auth/login', _authHandler.login)
-    ..post('/auth/registration', _authHandler.register);
+    ..post('/login', _authHandler.login)
+    ..post('/registration', _authHandler.register);
 }
 
-
-
-/*
-
-Response rootHandler(Request req) {
-  return Response.ok('Hello, World!\n');
-}
-
-Response echoHandler(Request request) {
-  final message = request.params['message'];
-  return Response.ok('$message\n');
-}
-*/

@@ -9,6 +9,8 @@ environment:
 dependencies:
   args: ^2.4.0
   crypto: ^3.0.3
+  dart_jsonwebtoken: ^2.14.0
+  logger: ^2.3.0
   postgres: ^3.2.1
   shelf: ^1.4.0
   shelf_router: ^1.1.0
